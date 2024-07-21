@@ -1,0 +1,26 @@
+---
+import SocialLink from '../components/SocialLink.astro';
+import GitHub from '../icons/GitHub.astro';
+import Itchio from '../icons/itchio.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
+import Mail from '../icons/Mail.astro';
+---
+
+<nav class="flex gap-x-3 justify-center">
+    <SocialLink link="https://www.linkedin.com/in/rub%C3%A9n-l%C3%B3pez-137161310/">
+        <LinkedIn class="size-6 opacity-80" color="#fff"/>
+        <span class="lg:md:flex hidden">LinkedIn</span>
+    </SocialLink>
+    <SocialLink link="https://github.com/RubyEnoshima">
+        <GitHub class="size-6 opacity-80" color="#fff"/>
+        <span class="lg:md:flex hidden">GitHub</span>
+    </SocialLink>
+    <SocialLink link="https://rubyenoshima.itch.io/">
+        <Itchio class="size-6 opacity-80" color="#fff"/>
+        <span class="lg:md:flex hidden">itch.io</span>
+    </SocialLink>
+    <SocialLink link="mailto:vilaruben70@gmail.com">
+        <Mail class="size-6 opacity-80" color="#fff"/>
+        <span class="lg:md:flex hidden">vilaruben70@gmail.com</span>
+    </SocialLink>
+</nav>

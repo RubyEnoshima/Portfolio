@@ -1,19 +1,17 @@
 ---
+import BotonesSocial from '../components/BotonesSocial.astro';
+import Experiencia from '../components/Experiencia.astro';
+import Footer from '../components/Footer.astro';
 import Intro from '../components/Intro.astro';
-import SocialLink from '../components/SocialLink.astro';
-import LinkedIn from '../icons/LinkedIn.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Rubén López - Programador">
-	<main class="flex flex-col gap-8">
+<Layout title="Rubén López - Desarrollador Full-Stack">
+	<main class="flex flex-col gap-7">
 		<Intro />
-		<nav class="flex gap-x-2">
-			<SocialLink link="https://www.linkedin.com/in/rub%C3%A9n-l%C3%B3pez-137161310/">
-				<LinkedIn class="size-6 opacity-80" color="#fff"/>
-				LinkedIn
-			</SocialLink>
-		</nav>
-		<hr class="border border-dotted border-gray-300 dark:border-gray-600 rounded-md">
+		<BotonesSocial />
+		<hr class="border border-dotted my-10 border-gray-300 dark:border-gray-600 rounded-md">
+		<Experiencia />
+		<Footer />
 	</main>
 </Layout>
